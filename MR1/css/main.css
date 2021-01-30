@@ -1,0 +1,297 @@
+/* Ul sections*/
+#art{
+  margin: auto;
+  font-family: 'Sansita Swashed', cursive;
+}
+
+/* Main Page */
+.main{
+  background: #cccccc;
+}
+
+/* Button Animation */
+.button1 {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.button span {
+  /* cursor: pointer; */
+  display: inline-block;
+  position: relative;
+  transition: 0.6s;
+}
+
+.button span:after {
+  content: '\>';
+  position: absolute;
+  opacity: 0;
+  /* top: 0; */
+  right: -35px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 30px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* Background color change
+Copyright (c) 2020 by Ian Farb (https://codepen.io/ianfarb/pen/DegqJ)
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"),
+to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense,
+and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.*/
+.bg {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: .25s;
+  pointer-events: none;
+}
+
+li a:hover  {
+      margin:-10px 0 0 0;
+}
+.menu li:first-child:hover ~ .bg {/* Summary */
+  background: #003049;
+}
+.menu li:nth-child(2):hover ~ .bg {/* Education */
+  background: #003278;
+}
+.menu li:nth-child(3):hover ~ .bg {/* Skills and Languages */
+  background: #8c0313;
+}
+.menu li:nth-child(4):hover ~ .bg {/* Certificates */
+  background: #b87006;
+}
+.menu li:nth-child(5):hover ~ .bg {/* Awards, Interests,and Hobbies */
+  background: #bfac00;
+}
+
+.ti a:hover ~ .bg {/* MyResume! */
+  background: #cccccc;
+}
+
+/* title */
+/* Main */
+#my1{
+  color: darkblue;
+}
+#m1{
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  color: darkred;
+  font-size: 50px;
+  background-size: contain;
+  -webkit-text-stroke: 1px black;
+}
+/* Summary */
+#one{
+  background-color: #003049;
+  color: white;
+  font-size: 40px;
+  height: 300px;
+  width: 300px;
+  border: 6px solid black;
+  border-radius: 30px;
+  -webkit-text-stroke: 1px black;
+}
+#S1{/* title */
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  color: #8292b5;
+  font-size: 50px;
+  background-size: contain;
+  -webkit-text-stroke: 1px black;
+}
+#Smy1{
+  color: #b5828a;
+}
+#Sbody{
+  background-color: #003049;
+}
+
+/* Education */
+#two{
+  background-color: #003278;
+  color: white;
+  font-size: 40px;
+  height: 300px;
+  width: 300px;
+  border: 6px solid black;
+  border-radius: 30px;
+  -webkit-text-stroke: 1px black;
+}
+#E1{/* title */
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  color: #6effc7;
+  font-size: 50px;
+  background-size: contain;
+  -webkit-text-stroke: 1px black;
+}
+#Emy1{
+  color: #9c6eff;
+}
+#Ebody{
+  background-color: #003278;
+}
+
+/* Skills and Languages */
+#three{
+  background-color: #8c0313;
+  color: white;
+  font-size: 40px;
+  height: 300px;
+  width: 300px;
+  border: 6px solid black;
+  border-radius: 30px;
+  -webkit-text-stroke: 1px black;
+}
+#L1{/* title */
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  color: #0fbfff;
+  font-size: 50px;
+  background-size: contain;
+  -webkit-text-stroke: 1px black;
+}
+#Lmy1{
+  color: #e0d100;
+}
+#Lbody{
+  background-color: #8c0313;
+}
+
+/* Certificates */
+#four{
+  background-color: #b87006;
+  color: white;
+  font-size: 40px;
+  height: 300px;
+  width: 300px;
+  border: 6px solid black;
+  border-radius: 30px;
+  -webkit-text-stroke: 1px black;
+}
+#C1{/* title */
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  color: lime;
+  font-size: 50px;
+  background-size: contain;
+  -webkit-text-stroke: 1px black;
+}
+#Cmy1{
+  color: #00822b;
+}
+#Cbody{
+  background-color: #b87006;
+}
+/* Awards, Interests,and Hobbies */
+#five{
+  background-color: #bfac00;
+  color: white;
+  font-size: 40px;
+  height: 300px;
+  width: 300px;
+  border: 6px solid black;
+  border-radius: 30px;
+  -webkit-text-stroke: 1px black;
+}
+#A1{/* title */
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  color: blue;
+  font-size: 50px;
+  background-size: contain;
+  -webkit-text-stroke: 1px black;
+}
+#Amy1{
+  color: red;
+}
+#Abody{
+  background-color: #bfac00;
+}
+
+/* Jumbotron */
+#jumb{
+  border: 6px solid black;
+  width:1550px;
+  margin: center;
+  left:20px;
+  border-radius: 30px;
+  background-color: white;
+}
+
+/* skills list reordering(sl) and fonts mod */
+.is{
+    float: left;
+    /* padding-right: 5%; */
+}
+
+/* .cs{
+    float: left;
+    padding-right: 13%;
+}
+.ts{
+    float: left;
+    padding-right: 15%;
+} */
+
+.ulf{
+  font-size: 20px;
+  width: 40%;
+
+}
+/*
+.cont{
+  width: 60%;
+} */
+
+/* Arabic list ordering */
+/* .al{
+float: right;
+padding-right:2%;
+}
+.ll{
+padding-left: 90%;
+} */
+
+
+/* Certificates lists items color */
+.cf{
+  color: black;
+}
+
+/* Education Sections Animated Collapsibles */
+.collapsible {
+  background-color: white;
+  color: black;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: silver;
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}

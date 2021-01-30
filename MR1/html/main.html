@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My Resume!</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" /> <!-- for the icons -->
+    <link rel="shortcut icon" type="image/x-icon" href="../../img/Icon.png" />
+    <!-- jQuery 3.x -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+  </head>
+  <body class="main">
+    <br>
+
+    <!-- Navbar with unordered list for title and sections -->
+      <nav class="navbar navbar-expand-lg">
+        <ul  class="ti" id="art">
+            <a style="text-decoration: none" href="main.html"><h1 id="m1"><span id="my1">My</span>Resume!</h1></a>
+            <div class="bg"></div>
+            <button class="navbar-toggler navbar-expand-lg navbar-light" style="border: 4px solid black;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon" style="width:200px;"></span>
+            </button><!--button when collapsing-->
+            <!--  -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto menu" id="art">
+              <li><a class="nav-link" href="Summary.html"><button class="button" id="one">
+                <span>Summary</span></button></a></li>
+              <li><a class="nav-link" href="Education.html"><button class="button" id="two">
+                <span>Education</span></button></a></li>
+              <li><a class="nav-link" href="Skills&Lang.html"><button class="button" id="three">
+                <span>Skills<br>&<br>Languages</span></button></a></li>
+              <li><a class="nav-link" href="Certificates.html"><button class="button" id="four">
+                <span>Certificates</span></button></a></li>
+              <li><a class="nav-link" href="Awrds&Intrs&Hobis.html"><button class="button" id="five">
+                <span>Awards,<br>Interests &<br>Hobbies</span></button></a></li>
+              <li class="bg"></li>
+            </ul>
+          </div>
+        </ul>
+      </nav><br>
+
+      <div class="jumbotron col-10 container" id="jumb">
+        <h1 class="display-3 cc" id="h0">My Resume!</h1>
+        <hr class="my-4" style="border: 1px solid black;" >
+        <a id="nm"  href="https://www.linkedin.com/in/abdulazizal-shehhi/" target="_blank"  style="font-size:40px;">&copyAbdulaziz Sinan Ali Al-Shehhi</a><p></p>
+            <h2 class="hh">Contact Information:</h2><br>
+            <div style="font-size:25px;">
+              <!-- <a href="#" ><span class="fa fa-phone fa-fw" style="padding-right:20px;"></span> +968 </a><br> -->
+              <a href="https://www.google.com/search?q=Dibba%2C+Musandam%2C+Oman&oq=Dibba%2C+Musandam%2C+Oman&aqs=chrome..69i57&sourceid=chrome&ie=UTF-8" target="_blank">
+                <span class="fa fa-map-marker fa-fw" style="padding-right:10px;"></span> Dibba, Musandam, Oman</a><br>
+              <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSKjswlCFRQLgtdmdRswDlmHMvndncbGrNFCkXdGDlhwzwxtgNbXkvQnzjcdLhxpCjsdSJfp" target="_blank">
+                <span class="fa fa-envelope fa-fw" style="padding-right:40px;"></span>mr.abdulaziz.alshehi@gmail.com</a>
+            </div>
+      </div>
+      <br>
+  </body>
+  <!-- Scripts -->
+  <!-- Color change Jumbotron header +more-->
+  <script type="text/javascript" src="../js/main.js"></script>
+  <!-- Color change Name to linkedin profile -->
+  <script type="text/javascript">
+    var nm = document.querySelector('#nm')
+      function getRandomColor() {
+          var letters = '0123456789ABCDEF';
+          var color = '#';
+          for (var i = 0; i < 6; i++) {
+              color += letters[Math.floor(Math.random()*16)];
+            }
+            return color
+      }
+      function changeNameColor() {
+          colorInput2 = getRandomColor()
+          nm.style.color = colorInput2;
+      }
+      setInterval("changeNameColor()",300);
+  </script>
+
+  <!--JQ & JS script for the Burger when collapsing-->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</html>
